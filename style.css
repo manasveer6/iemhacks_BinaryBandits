@@ -1,21 +1,25 @@
 :root {
   --darkblue: #614bc3;
   --bgcolor: #e3f4f4;
+  --profileclr: #33bbc5;
 }
 
 body {
+  height: 100vh;
+  width: 100vw;
   margin: 0;
   overflow-x: hidden;
-  background-color: var(--bgcolor);
+  background-color: var(--bgcolor) !important;
   font-family: "Rubik", sans-serif;
 }
 
 .nav {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 2%;
-  height: 10vh;
+  gap: 0.5%;
+  height: 11vh;
   width: 100vw;
   background-color: var(--darkblue);
   text-align: center;
@@ -23,17 +27,143 @@ body {
 
 .nav a {
   display: flex;
+  flex-direction: column;
   align-items: center;
   color: white;
   text-decoration: none;
   width: 8rem;
-  height: 2.5rem;
+  height: 2rem;
   transition: all 0.3s;
   cursor: pointer;
-  background: var(--bg-color);
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 550;
   align-items: center;
   justify-content: center;
   font-family: "Rubik", sans-serif;
+}
+
+.nav a::after {
+  margin-top: 5px;
+  content: "";
+  height: 5px;
+  width: 0%;
+  background-color: var(--bgcolor);
+  transition: all 0.2s ease-out;
+}
+
+.nav a:hover::after {
+  width: 60%;
+}
+
+.navleft {
+  position: absolute;
+  display: flex;
+  left: 2%;
+  gap: 10%;
+  padding: 1vw;
+}
+
+.navright {
+  position: absolute;
+  display: flex;
+  right: 2%;
+}
+
+.section {
+  width: 100vw;
+}
+
+.userinfo {
+  height: 30vh;
+}
+
+.card1 {
+  width: 30%;
+  height: 30vh;
+  background: var(--bgcolor);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  transition-duration: 0.5s;
+  padding-inline: 2vw;
+  gap: 1vw;
+}
+
+.profileImage {
+  background: linear-gradient(to right, var(--darkblue), var(--darkblue));
+  height: 70%;
+  width: 170px;
+  border-radius: 50%;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.329);
+}
+
+.textContainer {
+  width: 80%;
+  height: 60%;
+  text-align: left;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5%;
+}
+
+.name {
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: row;
+  height: 59vh;
+}
+
+.tasks .card {
+  background-color: var(--bgcolor);
+  width: 25%;
+  height: 100%;
+  margin-inline: 0.5vw;
+  border-radius: 2% !important;
+  border: 1% solid blue !important;
+}
+
+@property --progress-value {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@keyframes progress {
+  to {
+    --progress-value: 75;
+  }
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(
+      closest-side,
+      var(--bgcolor) 79%,
+      transparent 80% 100%
+    ),
+    conic-gradient(
+      var(--darkblue) calc(var(--progress-value) * 1%),
+      var(--profileclr) 0
+    );
+  animation: progress 2s 1 forwards;
+}
+
+.progress-bar::before {
+  counter-reset: percentage var(--progress-value);
+  content: counter(percentage) "%";
+  animation: progress 2s 1 forwards;
 }
