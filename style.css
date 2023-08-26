@@ -122,6 +122,7 @@ body {
 }
 
 .tasks .card {
+  display: flex;
   background-color: var(--bgcolor);
   width: 25%;
   height: 100%;
@@ -143,6 +144,7 @@ body {
 }
 
 .progress-bar {
+  margin: 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,4 +168,17 @@ body {
   counter-reset: percentage var(--progress-value);
   content: counter(percentage) "%";
   animation: progress 2s 1 forwards;
+}
+
+.rewards {
+  display: flex;
+  flex-direction: column;
+  gap: 7vh;
+  width: 90%;
+  height: fit-content;
+  align-self: center;
+}
+
+.threshold {
+  width: 100%;
 }
