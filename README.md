@@ -1,11 +1,11 @@
 # iemhacks_BinaryBandits
 IEM Hackathon
 
-*PROBLEM STATEMENT*:
+**PROBLEM STATEMENT**:
   -Create a Comprehensive Health and Wellness Platform that Addresses the Challenges of Identifying Minor Health Issues, Providing Customized Diet Plans, Effortlessly Monitoring Dietary 
    Intake, Introducing a Game Prototype Involving Task-based Points System, Streamlined Progress Tracking, and Seamless User Connectivity
 
-*TEAM MEMBERS*:
+**TEAM MEMBERS**:
 
   -TEAMLEAD : chavarahul 
   
