@@ -1,0 +1,39 @@
+:root {
+  --darkblue: #614bc3;
+  --bgcolor: #e3f4f4;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: var(--bgcolor);
+  font-family: "Rubik", sans-serif;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2%;
+  height: 10vh;
+  width: 100vw;
+  background-color: var(--darkblue);
+  text-align: center;
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  width: 8rem;
+  height: 2.5rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: var(--bg-color);
+  font-size: 1.2em;
+  font-weight: 550;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rubik", sans-serif;
+}
