@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/manasveer6/iemhacks_BinaryBandits/static/css/main.f4cbbc59.css",
+    "main.js": "/manasveer6/iemhacks_BinaryBandits/static/js/main.fe888f2c.js",
+    "index.html": "/manasveer6/iemhacks_BinaryBandits/index.html",
+    "main.f4cbbc59.css.map": "/manasveer6/iemhacks_BinaryBandits/static/css/main.f4cbbc59.css.map",
+    "main.fe888f2c.js.map": "/manasveer6/iemhacks_BinaryBandits/static/js/main.fe888f2c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4cbbc59.css",
+    "static/js/main.fe888f2c.js"
+  ]
+}
