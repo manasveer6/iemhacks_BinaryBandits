@@ -10,7 +10,7 @@ function Sections() {
       <Daily />
       <Monthly />
       <Goals />
-      <div className="card">
+      <div className="card rewardbox">
         <p className="reward-title"><img width="16" height="16" src="https://img.icons8.com/ios/50/warranty--v1.png" alt="warranty--v1" />Rewards</p>
         <div className="progress-bar">
           <progress
