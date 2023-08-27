@@ -314,3 +314,13 @@
     background-color: var(--darkblue);
     color: white;
   }
+
+  .task-list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+    overflow: scroll;
+  }
