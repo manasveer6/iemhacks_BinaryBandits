@@ -1,12 +1,15 @@
 import React from "react";
+import Daily from "./sections/Daily";
+import Monthly from "./sections/Monthly";
+import Goals from "./sections/Goals";
 import '../style.css';
 
 function Sections() {
     return (
         <section className="section tasks">
-  <div className="card">Daily</div>
-  <div className="card">Monthly</div>
-  <div className="card">Goal</div>
+  <Daily/>
+  <Monthly/>
+  <Goals/>
   <div className="card">
     <div className="progress-bar">
       <progress
