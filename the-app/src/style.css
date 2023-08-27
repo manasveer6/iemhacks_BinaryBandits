@@ -53,7 +53,7 @@ body {
 }
 
 .card1 {
-  width: 33%;
+  width: 33rem;
   height: 30vh;
   background: var(--bgcolor);
   display: flex;
@@ -67,8 +67,7 @@ body {
 
 .profileImage {
   background: linear-gradient(to right, var(--darkblue), var(--darkblue));
-  height: 70%;
-  width: 40%;
+  width: 12rem;
   border-radius: 50%;
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.329);
 }
@@ -128,7 +127,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  width: 120px;
+  width: 140px;
   height: 200px;
   border-radius: 50%;
   background: radial-gradient(
@@ -231,7 +230,7 @@ select:focus {
 }
 
 .form-container .form-submit-btn,
-#add-task {
+#add-task, #remove-task {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,9 +248,18 @@ select:focus {
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
 }
 
-#add-task {
-  margin-inline: 3.5vw;
+.btns {
+  gap: 2rem;
+}
+
+#add-task, #remove-task {
+  /* margin-inline: 3.5vw; */
   width: auto;
+}
+
+#remove-task {
+  background-color: #c34b4b;
+  margin-right: 3.5rem;
 }
 
 .form-container .form-submit-btn:hover {
@@ -339,14 +347,38 @@ select:focus {
 }
 
 .card__progress .val {
-  right: 1.5vw;
-  position: absolute;
-  height: 10px;
-  width: 10px;
-  font-size: xx-small;
+  /* height: 10px;
+  width: 10px; */
+  font-size: small;
+  margin-left: 1rem;
+  vertical-align: middle;
 }
 
 .rewardbox {
   background-color: #ffd966;
   border: 1px solid #0000 !important;
+}
+
+.diff-0 {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: green;
+  margin-left: 1rem;
+}
+
+.diff-1 {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgb(255, 208, 0);
+  margin-left: 1rem;
+}
+
+.diff-2 {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: red;
+  margin-left: 1rem;
 }

@@ -25,7 +25,7 @@ function Monthly() {
     monthlyListSetter = setMonthlyList;
 
     return <div className="card">
-    <p className="title">monthly</p>
+    <p className="title">Monthly</p>
     <div className="task-list">
     {monthlyList.map(createTask)}
     </div>

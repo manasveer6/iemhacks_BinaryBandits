@@ -121,7 +121,7 @@ function Profile() {
               <img width="30" height="30" src="https://img.icons8.com/stickers/100/like--v1.png" alt="like--v1" />
             </div>
             <progress max={100} value={60} />
-            <div className="val">60/100</div>
+            <span className="val">60/100</span>
           </div>
           <div className="card__progress">
             <div className="money img">

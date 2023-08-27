@@ -1,12 +1,12 @@
 const monthlyTasks = [
     {
         id: 1,
-        name: "get gud",
+        name: "Get dental checkup",
         difficulty: 2
     },
     {
         id: 2,
-        name: "get better",
+        name: "Fitness assessment",
         difficulty: 1
     }
 ];

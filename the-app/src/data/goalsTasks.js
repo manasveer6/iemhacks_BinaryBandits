@@ -1,17 +1,17 @@
 const goalsTasks = [
     {
         id: 1,
-        name: "go outside",
+        name: "Lose 5kgs",
         difficulty: 2
     },
     {
         id: 2,
-        name: "get a life",
+        name: "Attempt a marathon",
         difficulty: 0
     },
     {
         id: 3,
-        name: "get a job",
+        name: "Try a 5k run",
         difficulty: 1
     }
 ];

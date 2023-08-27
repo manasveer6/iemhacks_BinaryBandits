@@ -4,7 +4,7 @@ import '../style.css';
 function Task(props) {
     return <div className="task-item">
         <div className="checkbox-wrapper">
-  <input  id={props.id} name="checkbox" type="checkbox" />
+  <input className="task-checkbox" id={props.id} name="checkbox" type="checkbox" />
   <label className="terms-label" htmlFor={props.id}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ function Task(props) {
       />
     </svg>
     <span className="label-text">{props.name}</span>
-    <span>:{props.difficulty}</span>
+    <div className={"diff-"+props.difficulty}></div>
   </label>
 </div>
 

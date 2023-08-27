@@ -1,22 +1,22 @@
 const dailyTasks = [
     {
         id: 1,
-        name: "task1",
-        difficulty: 0
+        name: "Take meds",
+        difficulty: 0,
     },
     {
         id: 2,
-        name: "task2",
+        name: "Exercise",
         difficulty: 1
     },
     {
         id: 3,
-        name:  "task3",
+        name:  "Meditation",
         difficulty: 2
     },
     {
         id: 4,
-        name:  "task4",
+        name:  "Yoga",
         difficulty: 1
     }
 ];

@@ -25,7 +25,7 @@ function Goals() {
     goalsListSetter = setGoalsList;
 
     return <div className="card">
-    <p className="title">goals</p>
+    <p className="title">Goals</p>
     <div className="task-list">
     {goalsList.map(createTask)}
     </div>
