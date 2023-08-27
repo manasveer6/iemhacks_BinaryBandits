@@ -45,6 +45,7 @@ body {
 
 .section.tasks {
   margin-bottom: 4rem;
+  margin-inline: 1vw;
 }
 
 .userinfo {
@@ -93,6 +94,7 @@ body {
   display: flex;
   flex-direction: row;
   height: 60vh;
+  margin-inline: 1vw;
 }
 
 .tasks .card {
@@ -100,9 +102,9 @@ body {
   flex-direction: column;
   align-items: center;
   /* background-color: var(--bgcolor); */
-  width: 25%;
+  width: 24%;
   height: 100%;
-  margin-inline: 0.5vw;
+  margin-right: 0.5vw;
   border-radius: 2% !important;
   border: 1% solid blue !important;
   overflow: hidden;
@@ -126,8 +128,8 @@ body {
   justify-content: center;
   align-items: center;
 
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 200px;
   border-radius: 50%;
   background: radial-gradient(
       closest-side,
@@ -152,7 +154,7 @@ body {
   flex-direction: column;
   gap: 7vh;
   width: 90%;
-  height: fit-content;
+  height: 80%;
   align-items: center;
 }
 
@@ -248,7 +250,7 @@ select:focus {
 }
 
 #add-task {
-  margin-inline: 3vw;
+  margin-inline: 3.5vw;
   width: auto;
 }
 
@@ -346,4 +348,5 @@ select:focus {
 
 .rewardbox {
   background-color: #ffd966;
+  border: 1px solid #0000 !important;
 }

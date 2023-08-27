@@ -15,7 +15,7 @@ function AddTask() {
 
         let difficulyValue;
 
-        switch(taskDifficulty) {
+        switch (taskDifficulty) {
             case 'easy':
                 difficulyValue = 0;
                 break;
@@ -29,7 +29,7 @@ function AddTask() {
         }
 
         const newTask = {
-            id: (dailyListOutside.length+1),
+            id: (dailyListOutside.length + 1),
             name: taskName,
             difficulty: difficulyValue
         };
@@ -53,7 +53,7 @@ function AddTask() {
 
         <div className={`add-container ${isPopupVisible ? '' : 'hidden'}`}>
             <div className="form-container">
-            <button onClick={handleClick} id="close-btn">X</button>
+                <button onClick={handleClick} id="close-btn"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/multiply.png" alt="multiply" /></button>
                 <div className="logo-container">Add Task</div>
                 <form className="form" onSubmit={handleSubmit}>
                     <div className="form-group">
@@ -76,7 +76,7 @@ function AddTask() {
                             required
                             value={taskDifficulty}
                             onChange={(e) => {
-                            setTaskDifficulty(e.target.value);
+                                setTaskDifficulty(e.target.value);
                             }}
                         >
                             <option value="" disabled selected hidden>Choose a difficulty</option>
