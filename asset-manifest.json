@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/manasveer6/iemhacks_BinaryBandits/static/css/main.f4cbbc59.css",
-    "main.js": "/manasveer6/iemhacks_BinaryBandits/static/js/main.fe888f2c.js",
-    "index.html": "/manasveer6/iemhacks_BinaryBandits/index.html",
-    "main.f4cbbc59.css.map": "/manasveer6/iemhacks_BinaryBandits/static/css/main.f4cbbc59.css.map",
-    "main.fe888f2c.js.map": "/manasveer6/iemhacks_BinaryBandits/static/js/main.fe888f2c.js.map"
+    "main.css": "/manasveer6/iemhacks_BinaryBandits/the-app/static/css/main.f4cbbc59.css",
+    "main.js": "/manasveer6/iemhacks_BinaryBandits/the-app/static/js/main.debe5846.js",
+    "index.html": "/manasveer6/iemhacks_BinaryBandits/the-app/index.html",
+    "main.f4cbbc59.css.map": "/manasveer6/iemhacks_BinaryBandits/the-app/static/css/main.f4cbbc59.css.map",
+    "main.debe5846.js.map": "/manasveer6/iemhacks_BinaryBandits/the-app/static/js/main.debe5846.js.map"
   },
   "entrypoints": [
     "static/css/main.f4cbbc59.css",
-    "static/js/main.fe888f2c.js"
+    "static/js/main.debe5846.js"
   ]
 }
